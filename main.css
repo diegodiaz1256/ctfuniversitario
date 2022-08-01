@@ -31,3 +31,7 @@ a:not(.collapsed) i {
 .text-small {
     font-size: 0.8rem;
 }
+
+.dotted {
+    border-bottom: 3px dashed #8e0404;
+}
