@@ -14,12 +14,13 @@
     color: var(--bs-body-color);
 }
 
-.rotated {
-    transform: rotate(-180deg);
+.arrowicon {
+
     transition: 0.6s ease;
 }
 
-.arrowicon {
+a:not(.collapsed) i {
+    transform: rotate(-180deg);
     transition: 0.6s ease;
 }
 
