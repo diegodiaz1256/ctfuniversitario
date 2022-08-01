@@ -27,3 +27,7 @@ a:not(.collapsed) i {
 .patrocinadores {
     background-color: #e2e2e2;
 }
+
+.text-small {
+    font-size: 0.8rem;
+}
