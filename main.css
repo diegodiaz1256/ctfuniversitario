@@ -7,3 +7,22 @@
     padding: 13px;
     font: 20px Arial, sans-serif;
 }
+
+.arrow,
+.arrow:visited,
+.arrow:hover {
+    color: var(--bs-body-color);
+}
+
+.rotated {
+    transform: rotate(-180deg);
+    transition: 0.6s ease;
+}
+
+.arrowicon {
+    transition: 0.6s ease;
+}
+
+.patrocinadores {
+    background-color: #e2e2e2;
+}
