@@ -12,6 +12,7 @@
 .arrow:visited,
 .arrow:hover {
     color: var(--bs-body-color);
+    text-decoration: none;
 }
 
 .arrowicon {

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTFUniversitario</title>
     <link rel="stylesheet" href="main.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
@@ -20,7 +21,48 @@
     <script defer src="//bootstrap-extension.com/bootstrap-extension-5.1.0/js/bootstrap-extension.min.js"></script>
 </head>
 
-<body>
+<body style="padding-top:4.5rem">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <section class="container text-center p-3">
         <h2 class="my-3 dividered dividered-center dividered-danger">¿En que consiste?</h2>
         <p class="px-5">El evento consistirá en una competición CTF de tipo jeopardy donde
@@ -73,17 +115,18 @@
         <h2 class="my-5 dividered dividered-center dividered-danger">Requisitos</h2>
         <article class="text-center row container">
 
-            <div class="container col-md-6 col-sm-12 text-start">
+            <div class="container col-md-7 col-sm-12 text-md-start text-sm-center">
                 <aside class="my-5">
                     <b class="circle d-inline-block text-center">1</b>
-                    <b class="h2 ms-2 ">Tener entre 18 y 26
-                        <a class="arrow collapsed " data-bs-toggle="collapse" data-bs-target="#collapse1" role="button"
+                    <b class="h4 ms-2 ">
+                        <a class="arrow collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1" role="button"
                             aria-expanded="false" aria-controls="collapse1">
+                            Tener entre 18 y 26
                             <i class="ms-3 fa-solid fa-angle-down arrowicon"></i>
                         </a>
                     </b>
                     <div class="collapse" id="collapse1">
-                        <p class="container w-75 ">La edad del/de la participante deberá estar
+                        <p class="container w-75 w-sm-100">La edad del/de la participante deberá estar
                             comprendida
                             entre los
                             18 y
@@ -98,14 +141,15 @@
 
                     <b class="circle d-inline-block text-center">2</b>
 
-                    <b class="h2 ms-2 text-center">Matriculado en el curso 2022-23
+                    <b class="h4 ms-2 text-center">
                         <a class="arrow collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2" role="button"
-                            aria-expanded="false" aria-controls="collapse2 ">
+                            aria-expanded="false" aria-controls="collapse2">
+                            Matriculado en el curso 2022-23
                             <i class="ms-3 fa-solid fa-angle-down arrowicon"></i>
                         </a>
                     </b>
                     <div class="collapse" id="collapse2">
-                        <p class="container w-75 ">Los estudios deben ser de grado o máster universitario
+                        <p class="container w-75 w-sm-100  ">Los estudios deben ser de grado o máster universitario
                             relacionado
                             con las tecnologías en cualquiera de las universidades de Madrid. Se solicitará la
                             documentación oficial acreditativa de la matrícula durante la inscripción.
@@ -115,19 +159,20 @@
                 </aside>
                 <aside class="my-5">
                     <b class="circle d-inline-block text-center">3</b>
-                    <b class="h2 ms-2 text-center">Formar equipos de 3-4 personas
+                    <b class="h4 ms-2 text-center">
                         <a class="arrow collapsed" data-bs-toggle="collapse" data-bs-target="#collapse3" role="button"
                             aria-expanded="false" aria-controls="collapse3">
+                            Formar equipos de 3-4 personas
                             <i class="ms-3 fa-solid fa-angle-down arrowicon"></i>
                         </a>
                     </b>
                     <div class="collapse" id="collapse3">
-                        <p class="container w-75 ">Mismas universidades? Distintas???
+                        <p class="container w-75 w-sm-100">Mismas universidades? Distintas???
                         </p>
                     </div>
                 </aside>
             </div>
-            <div class="container col-sm-12 col-md-6">
+            <div class="container col-sm-12 col-md-5">
                 <img class="img-fluid" src="images/IMG_20210908_113717.jpg" alt="">
             </div>
         </article>
@@ -141,7 +186,7 @@
                     src="//maps.google.com/maps?output=embed&amp;q=%C2%A0C.%20Tulip%C3%A1n%2C%20s%2Fn%2C%2028933%20M%C3%B3stoles%2C%20Madrid%2C%20Espa%C3%B1a&amp;z=13&amp;t=m"
                     data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyJUMyJUEwQy4lMjBUdWxpcCVDMyVBMW4lMkMlMjBzJTJGbiUyQyUyMDI4OTMzJTIwTSVDMyVCM3N0b2xlcyUyQyUyME1hZHJpZCUyQyUyMEVzcGElQzMlQjFhJTIyJTJDJTIyem9vbSUyMiUzQTEzJTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0FudWxsJTJDJTIyYXBpS2V5JTIyJTNBbnVsbCUyQyUyMm1hcmtlcnMlMjIlM0ElNUIlNUQlN0Q="></iframe>
             </div>
-            <div class="container col-md-5 col-sm-12 text-start my-5">
+            <div class="container col-md-5 col-sm-12 my-5 text-sm-center text-md-start">
                 <section>
                     <b class="h4"><i class="fa-solid fa-calendar-days me-3"></i> 29 de octubre de 2022</b>
                 </section>
@@ -163,7 +208,7 @@
                 <div class="container col-sm-12 col-md-6 "><img class="w-75"
                         src="images/471222f913b0cf4b8a0ed75f755d36b2a733f840267e38158109c68313d49510ae2aec886070acc0603a45680c9f39985c7b8c70b0750c16a49d74_1280.png">
                 </div>
-                <div class="container col-sm-12 col-md-6 mt-sm-5 mt-md-0"><img class="w-75"
+                <div class="container col-sm-12 col-md-6 mt-5 mt-md-0"><img class="w-75"
                         src="images/471222f913b0cf4b8a0ed75f755d36b2a733f840267e38158109c68313d49510ae2aec886070acc0603a45680c9f39985c7b8c70b0750c16a49d74_1280.png">
                 </div>
             </article>
@@ -175,7 +220,7 @@
                 <div class="container col-sm-12 col-md-6"><img class="w-75"
                         src="images/471222f913b0cf4b8a0ed75f755d36b2a733f840267e38158109c68313d49510ae2aec886070acc0603a45680c9f39985c7b8c70b0750c16a49d74_1280.png">
                 </div>
-                <div class="container col-sm-12 col-md-6 mt-sm-5 mt-md-0 "><img class="w-75"
+                <div class="container col-sm-12 col-md-6 mt-5 mt-md-0 "><img class="w-75"
                         src="images/471222f913b0cf4b8a0ed75f755d36b2a733f840267e38158109c68313d49510ae2aec886070acc0603a45680c9f39985c7b8c70b0750c16a49d74_1280.png">
                 </div>
             </article>
@@ -188,7 +233,7 @@
                 <div class="container col-sm-12 col-md-6"><img class="w-75"
                         src="images/471222f913b0cf4b8a0ed75f755d36b2a733f840267e38158109c68313d49510ae2aec886070acc0603a45680c9f39985c7b8c70b0750c16a49d74_1280.png">
                 </div>
-                <div class="container col-sm-12 col-md-6 mt-sm-5 mt-md-0"><img class="w-75"
+                <div class="container col-sm-12 col-md-6 mt-5 mt-md-0"><img class="w-75"
                         src="images/471222f913b0cf4b8a0ed75f755d36b2a733f840267e38158109c68313d49510ae2aec886070acc0603a45680c9f39985c7b8c70b0750c16a49d74_1280.png">
                 </div>
             </article>
