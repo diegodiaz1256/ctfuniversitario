@@ -22,23 +22,32 @@
 </head>
 
 <body style="padding-top:4.5rem">
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg bg-danger  fixed-top">
+        <div class="container-fluid ">
+            <a class="collapsed menubut p-3 " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                role="button" aria-expanded="false" aria-controls="navbarSupportedContent">
+                <i class="fa-solid fa-bars fa-lg text-gray"></i>
+            </a>
+            <!-- <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button> -->
+            <a class="navbar-brand text-white" href="#">CTF Universitario</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link text-white" href="#requisitos">Requisitos</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#ubicacion">Ubicacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#patrocinadores">Patrocinadores</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Dropdown
@@ -54,12 +63,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
-                    </li>
+                    </li> -->
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -111,7 +120,7 @@
 
         </div>
     </section>
-    <section class="container text-center my-5 p-3">
+    <section id="requisitos" class="container text-center my-5 p-3">
         <h2 class="my-5 dividered dividered-center dividered-danger">Requisitos</h2>
         <article class="text-center row container">
 
@@ -177,7 +186,7 @@
             </div>
         </article>
     </section>
-    <section class="container text-center my-5 pb-5">
+    <section id="ubicacion" class="container text-center my-5 p-3">
         <h2 class="my-5 dividered dividered-center dividered-danger">Ubicación</h2>
         <article class="text-center row container">
 
@@ -200,7 +209,7 @@
         </article>
     </section>
     <div class="patrocinadores">
-        <section class="text-center container patrocinadores py-5">
+        <section id="patrocinadores" class="text-center container patrocinadores py-5">
             <h2 class="py-5 dividered dividered-center dividered-danger">Patrocinadores</h2>
 
             <h3 class="my-5">PATROCINADORES PLATINO</h3>
