@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
 .circle {
     border-radius: 50%;
     width: 50px;
@@ -42,4 +48,9 @@
 
 .dotted {
     border-bottom: 3px dashed #8e0404;
+}
+
+.nav-link:hover {
+    color: black !important;
+    background-color: whitesmoke;
 }
