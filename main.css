@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+@font-face {
+    font-family: 'AldotheApache';
+    src: url('/AldotheApache.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     font-family: 'Open Sans', sans-serif;
+
 }
 
 .title {
@@ -58,4 +66,89 @@
 .nav-link:hover {
     color: black !important;
     background-color: whitesmoke;
+}
+
+.bg-nav {
+    --bs-bg-opacity: 1;
+    background-color: #383ab5 !important;
+}
+
+.bg-bullet {
+    --bs-bg-opacity: 1;
+    background-color: #2325b8 !important;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    overflow: hide;
+}
+
+.banner h1 {
+    font-family: AldotheApache;
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+.banner h3 {
+    font-size: 2rem;
+}
+
+.banner img {
+    margin-top: 0rem;
+    width: 50%;
+}
+
+.banner .container {
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .banner img {
+        margin-top: 2rem;
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner img {
+        margin-top: 1rem;
+        width: 40%;
+    }
+}
+
+/* 
+.banner button:hover {
+    de
+} */
+
+.banner button:focus,
+button:hover {
+    outline: none;
+    border: none;
+}
+
+@media (min-width: 1200px) {
+    .banner h1 {
+        font-size: 8.5rem;
+    }
+
+    .banner .container {
+        padding-top: 3rem;
+    }
+
+    .banner h3 {
+        font-size: 3rem;
+    }
+
+    .banner img {
+        margin-top: 0rem;
+        margin-left: 15rem !important;
+        width: 75%;
+    }
+
+    .banner button {
+        font-size: 1.5rem;
+    }
 }
