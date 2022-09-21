@@ -22,7 +22,7 @@
 </head>
 
 <body style="padding-top: 3.5rem;">
-    <nav id="nav" class="navbar navbar-expand-lg fixed-top px-md-5 px-0 border-bottom border-3 border-dark">
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top px-md-5 px-0 border-bottom border-3 border-dark bg-danger">
         <div class="container-fluid px-md-5 px-1 text-md-left text-center border-bottom-5 border-dark">
             <a class="collapsed menubut p-3 navbar-toggler border-0" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" role="button" aria-expanded="false"
@@ -59,11 +59,20 @@
         </div>
     </nav>
     <script>
+        var r = document.querySelector(':root');
+
+
+        // Create a function for setting a variable value
+        function myFunction_set() {
+            // Set the value of variable --blue to another value (in this case "lightblue")
+
+        }
         const $ = (selector, context = document) =>
             context.querySelector(selector)
-        if ((new URL(window.location.href)).host === "librelabucm.org") {
-            $("#nav").classList.add("bg-nav")
-            $()
+        if (confirm("Quieres ver la version de Librelab??") || (new URL(window.location.href)).host === "librelabucm.org") {
+            r.style.setProperty('--bs-danger', '#383ab5');
+            r.style.setProperty('--bs-danger-rgb', '56, 58, 181');
+            r.style.setProperty('--bullet-colors', '#2325b8');
         } else {
             $("#nav").classList.add("bg-danger")
         }

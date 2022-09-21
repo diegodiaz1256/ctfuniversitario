@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+:root {
+    --bullet-colors: #8e0404;
+}
+
 * {
     font-family: 'Open Sans', sans-serif;
 
@@ -21,7 +25,7 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background: #8e0404;
+    background: var(--bullet-colors);
     color: #fff;
     padding: 13px;
     font: 20px Arial, sans-serif;
@@ -60,7 +64,7 @@
 }
 
 .dotted {
-    border-bottom: 3px dashed #8e0404;
+    border-bottom: 3px dashed var(--bullet-colors);
 }
 
 .nav-link:hover {
@@ -96,7 +100,7 @@
 }
 
 .banner img {
-    margin-top: 0rem;
+    margin-top: 2rem;
     width: 50%;
 }
 
@@ -104,14 +108,28 @@
     margin: 0 auto;
 }
 
-@media (min-width: 576px) {
+@media only screen and (min-width: 0px) {
+    .banner img {
+        margin-top: 2rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 452px) {
     .banner img {
         margin-top: 2rem;
         width: 60%;
     }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+    .banner img {
+        margin-top: 1rem;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
     .banner img {
         margin-top: 1rem;
         width: 40%;
@@ -129,7 +147,7 @@ button:hover {
     border: none;
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .banner h1 {
         font-size: 8.5rem;
     }
@@ -151,4 +169,8 @@ button:hover {
     .banner button {
         font-size: 1.5rem;
     }
+}
+
+.dividered-danger::after {
+    border-color: var(--bullet-colors) !important;
 }
