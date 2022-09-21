@@ -59,22 +59,14 @@
         </div>
     </nav>
     <script>
-        var r = document.querySelector(':root');
 
-
-        // Create a function for setting a variable value
-        function myFunction_set() {
-            // Set the value of variable --blue to another value (in this case "lightblue")
-
-        }
         const $ = (selector, context = document) =>
             context.querySelector(selector)
+        const r = $(':root');
         if (confirm("Quieres ver la version de Librelab??") || (new URL(window.location.href)).host === "librelabucm.org") {
             r.style.setProperty('--bs-danger', '#383ab5');
             r.style.setProperty('--bs-danger-rgb', '56, 58, 181');
             r.style.setProperty('--bullet-colors', '#2325b8');
-        } else {
-            $("#nav").classList.add("bg-danger")
         }
 
     </script>
