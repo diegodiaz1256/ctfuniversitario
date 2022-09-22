@@ -63,7 +63,9 @@
         const $ = (selector, context = document) =>
             context.querySelector(selector)
         const r = $(':root');
-        if (confirm("Quieres ver la version de Librelab??") || (new URL(window.location.href)).host === "librelabucm.org") {
+        r.style.setProperty('--bs-danger', '#8e0404');
+        r.style.setProperty('--bs-danger-rgb', '142, 4, 4');
+        if ((new URL(window.location.href)).host === "librelabucm.org") {
             r.style.setProperty('--bs-danger', '#383ab5');
             r.style.setProperty('--bs-danger-rgb', '56, 58, 181');
             r.style.setProperty('--bullet-colors', '#2325b8');
@@ -86,8 +88,8 @@
     <div class="bg-black banner">
         <div class=" container w-100 row text-center">
             <div class="container col-12 col-xl-6 text-xl-start text-center align-middle d-inline  ">
-                <h1>Holaaaa</h1>
-                <h3>BOTTOM</h3>
+                <h1>CTF <span style="color:var(--bs-danger); font: inherit;">UNI</span></h1>
+                <h3 class="desc">CTF universitario de Madrid</h3>
                 <button class="btn bg-danger text-white rounded-0 mt-3">INSCRIBIRSE</button>
             </div>
             <div class=" container col-12 col-xl-6 text-center align-middle">
@@ -146,7 +148,7 @@
         </div>
     </section>
     <section id="requisitos" class="container text-center my-5 p-3">
-        <h2 class="my-5 dividered dividered-center dividered-danger title">Requisitos</h2>
+        <h2 class="my-5 dividered dividered-center dividered-danger title-section">Requisitos</h2>
         <article class="text-center row container">
 
             <div class="container col-md-7 col-sm-12 text-md-start text-sm-center">

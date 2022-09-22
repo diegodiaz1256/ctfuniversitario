@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 @font-face {
     font-family: 'AldotheApache';
-    src: url('/ctfuniversitario/AldotheApache.ttf') format('truetype');
+    src: url('AldotheApache.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,7 +19,15 @@
 }
 
 .title {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium-Web", sans-serif;
+    text-transform: uppercase;
+}
+
+.title-section {
+    font-family: "Titillium-Web", sans-serif;
+    font-weight: bold;
+    font-size: 2.375rem;
+    margin: 39px 10px 0;
 }
 
 .circle {
@@ -89,14 +98,17 @@
     overflow: hide;
 }
 
-.banner h1 {
+.banner h1,
+span {
     font-family: AldotheApache;
     font-size: 5rem;
     margin-top: 5rem;
 }
 
 .banner h3 {
-    font-size: 2rem;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
 }
 
 .banner img {
@@ -153,11 +165,11 @@ button:hover {
     }
 
     .banner .container {
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
 
     .banner h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .banner img {
@@ -173,4 +185,16 @@ button:hover {
 
 .dividered-danger::after {
     border-color: var(--bullet-colors) !important;
+}
+
+
+
+.desc {
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
