@@ -10,34 +10,38 @@
 }
 
 :root {
-    --bullet-colors: #8e0404;
+    --bullet-colors: #855fdd;
 }
 
 * {
     font-family: 'Open Sans', sans-serif;
-
 }
 
 .title {
-    font-family: "Titillium-Web", sans-serif;
+    font-family: titillium-Web, sans-serif !important;
     text-transform: uppercase;
+    
 }
 
-.title-section {
-    font-family: "Titillium-Web", sans-serif;
+.section-title{
+    
+    font-family: titillium-Web;
     font-weight: bold;
-    font-size: 2.375rem;
-    margin: 39px 10px 0;
+    font-size: 2.8rem;
+    
 }
+
+
 
 .circle {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
     background: var(--bullet-colors);
     color: #fff;
     padding: 13px;
     font: 20px Arial, sans-serif;
+    margin-right: 8px;
 }
 
 .arrow,
@@ -77,13 +81,13 @@
 }
 
 .nav-link:hover {
-    color: black !important;
-    background-color: whitesmoke;
+    background-color: #9976eb;
 }
 
 .bg-nav {
     --bs-bg-opacity: 1;
     background-color: #383ab5 !important;
+    
 }
 
 .bg-bullet {
@@ -91,9 +95,25 @@
     background-color: #2325b8 !important;
 }
 
+.navbar-title {
+    font-family: sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 1.2rem !important;
+}
+
+.navbar-title-main {
+    font-family: sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    font-size: 1.5rem !important;
+    margin-right: 30px !important;
+}
+
+
 .banner {
-    width: 100%;
-    height: 100vh;
+    width: 100% ;
+    height: 50vh;
     color: white;
     overflow: hide;
 }
@@ -155,8 +175,9 @@ span {
 
 .banner button:focus,
 button:hover {
+    background-color: #906edd !important;
     outline: none;
-    border: none;
+    border-color: #906edd !important;
 }
 
 @media only screen and (min-width: 1200px) {

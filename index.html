@@ -22,7 +22,7 @@
 </head>
 
 <body style="padding-top: 3.5rem;">
-    <nav id="nav" class="navbar navbar-expand-lg fixed-top px-md-5 px-0 border-bottom border-3 border-dark bg-danger">
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top px-md-5 px-0 py-3 border-bottom border-1 border-dark bg-danger">
         <div class="container-fluid px-md-5 px-1 text-md-left text-center border-bottom-5 border-dark">
             <a class="collapsed menubut p-3 navbar-toggler border-0" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" role="button" aria-expanded="false"
@@ -33,25 +33,28 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button> -->
-            <a class="navbar-brand text-white title" href="#">CTF Universitario</a>
+            <a class="navbar-brand text-white navbar-title-main" href="#">CTF Universitario</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white title">
                     <!-- <li class="nav-item ">
                         <a class="nav-link active text-white title" aria-current="page" href="#"></a>
                     </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link text-white title " href="#requisitos">REQUISITOS</a>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white navbar-title" href="#requisitos">REQUISITOS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white title " href="#ubicacion">UBICACIÓN</a>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white navbar-title" href="#ubicacion">UBICACIÓN</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white title " href="#patrocinadores">PATROCINADORES</a>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white navbar-title" href="#patrocinadores">PATROCINADORES</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white navbar-title" href="/equipo.html">EQUIPO</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white title " href="/login">INSCRIPCIÓN</a>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white navbar-title" href="#">INSCRIPCIÓN</a>
                     </li>
                 </ul>
 
@@ -63,8 +66,9 @@
         const $ = (selector, context = document) =>
             context.querySelector(selector)
         const r = $(':root');
-        r.style.setProperty('--bs-danger', '#8e0404');
-        r.style.setProperty('--bs-danger-rgb', '142, 4, 4');
+        r.style.setProperty('--bs-danger', '#986efd');
+        r.style.setProperty('--bs-danger-rgb', '133, 95, 221');
+        //r.style.setProperty('--bs-danger-rgb', '27, 133, 169');
         if ((new URL(window.location.href)).host === "librelabucm.org") {
             r.style.setProperty('--bs-danger', '#383ab5');
             r.style.setProperty('--bs-danger-rgb', '56, 58, 181');
@@ -85,61 +89,62 @@
             </div>
         </div>
     </div> -->
-    <div class="bg-black banner">
+    <div class="banner" style="background-color: #120c25;">
         <div class=" container w-100 row text-center">
             <div class="container col-12 col-xl-6 text-xl-start text-center align-middle d-inline  ">
                 <h1>CTF <span style="color:var(--bs-danger); font: inherit;">UNI</span></h1>
                 <h3 class="desc">CTF universitario de Madrid</h3>
-                <button class="btn bg-danger text-white rounded-0 mt-3">INSCRIBIRSE</button>
+                <button class="btn bg-danger text-white rounded-0 mt-3 navbar-title px-4">PRÓXIMAMENTE</button>
             </div>
             <div class=" container col-12 col-xl-6 text-center align-middle">
-                <img src="seek.png" class=" p-0 p-md-5 text-center" alt="...">
+                <img src="CTFUni.png" class="p-0 p-md-5 text-center" alt="...">
             </div>
         </div>
     </div>
 
 
-    <section class="container text-center p-3 ">
-        <h2 class="my-3 dividered dividered-center dividered-danger title">¿En qué consiste?</h2>
+    <section class="container text-center p-3 my-10" style="font-size: 1.2rem">
+        <br><br>
+        <h2 class="my-3 dividered dividered-center dividered-danger section-title">¿En qué consiste?</h2>
         <p class="px-5">El evento consistirá en una competición CTF de tipo jeopardy donde
             los
             equipos
             deberán
             resolver el máximo número de retos a lo largo del día.<br><br>
             Los retos a los que se enfrentarán podrían comprender las siguientes categorías:</p>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-6 col-md-4 col-lg-3  container">
-                <p class="text-center"><img src="images/32087961.png" alt="" style="height: 46px; width: 46px;"><br>
+                <p class="text-center"><img src="images/forense.png" alt="" style="height: 46px; width: 46px;"><br>
 
                     FORENSE</p>
             </div>
             <div class="col-6 col-md-4 col-lg-3   container">
-                <p class="text-center"><img src="images/1336494.png" alt="" style="height: 46px; width: 46px;"><br>
+                <p class="text-center"><img src="images/web.png" alt="" style="height: 46px; width: 46px;"><br>
 
                     WEB</p>
             </div>
             <div class="col-6 col-md-4 col-lg-3  container">
-                <p class="text-center"><img src="images/7873598.png" alt="" style="height: 46px; width: 46px;"><br>
+                <p class="text-center"><img src="images/crypto.png" alt="" style="height: 46px; width: 46px;"><br>
 
                     CRIPTOGRAFIA</p>
             </div>
             <div class=" col-6 col-md-4 col-lg-3  container">
-                <p class="text-center"><img src="images/2329087.png" alt="" style="height: 46px; width: 46px;"><br>
+                <p class="text-center"><img src="images/osint.png" alt="" style="height: 46px; width: 46px;"><br>
 
                     OSINT</p>
             </div>
             <div class=" col-6 col-md-4 col-lg-3  container">
-                <p class="text-center"><img src="images/3617252.png" alt="" style="height: 46px; width: 46px;"><br>
+                <p class="text-center"><img src="images/pwn.png" alt="" style="height: 46px; width: 46px;"><br>
 
                     PWN</p>
             </div>
             <div class=" col-6 col-md-4 col-lg-3  container">
-                <p class="text-center"><img src="images/784599.png" alt="" style="height: 46px; width: 46px;"><br>
+                <p class="text-center"><img src="images/reversing.png" alt="" style="height: 46px; width: 46px;"><br>
 
                     REVERSING</p>
             </div>
             <div class=" col-6 col-md-4 col-lg-3  container">
-                <p class="text-center"><img src="images/1491174.png" alt="" style="height: 46px; width: 46px;"><br>
+                <p class="text-center"><img src="images/misc.png" alt="" style="height: 46px; width: 46px;"><br>
 
                     MISC</p>
             </div>
@@ -147,10 +152,12 @@
 
         </div>
     </section>
-    <section id="requisitos" class="container text-center my-5 p-3">
-        <h2 class="my-5 dividered dividered-center dividered-danger title-section">Requisitos</h2>
+    <section id="requisitos" class="container text-center p-3 mt-4">
+        <br><br>
+        <h2 class="my-10 dividered dividered-center dividered-danger section-title">Requisitos</h2>
+        <br><br>
         <article class="text-center row container">
-
+            
             <div class="container col-md-7 col-sm-12 text-md-start text-sm-center">
                 <aside class="my-5">
                     <b class="circle d-inline-block text-center">1</b>
@@ -161,8 +168,8 @@
                             <i class="ms-3 fa-solid fa-angle-down arrowicon"></i>
                         </a>
                     </b>
-                    <div class="collapse" id="collapse1">
-                        <p class="container w-75 w-sm-100">La edad del/de la participante deberá estar
+                    <div class="collapse ms-2" id="collapse1" >
+                        <p class="container w-75 w-sm-100 ms-5" >La edad del/de la participante deberá estar
                             comprendida
                             entre los
                             18 y
@@ -184,8 +191,8 @@
                             <i class="ms-3 fa-solid fa-angle-down arrowicon"></i>
                         </a>
                     </b>
-                    <div class="collapse" id="collapse2">
-                        <p class="container w-75 w-sm-100  ">Los estudios deben ser de grado o máster universitario
+                    <div class="collapse ms-2" id="collapse2">
+                        <p class="container w-75 w-sm-100 ms-5">Los estudios deben ser de grado o máster universitario
                             relacionado
                             con las tecnologías en cualquiera de las universidades de Madrid. Se solicitará la
                             documentación oficial acreditativa de la matrícula durante la inscripción.
@@ -202,8 +209,8 @@
                             <i class="ms-3 fa-solid fa-angle-down arrowicon"></i>
                         </a>
                     </b>
-                    <div class="collapse" id="collapse3">
-                        <p class="container w-75 w-sm-100">
+                    <div class="collapse ms-2" id="collapse3">
+                        <p class="container w-75 w-sm-100 ms-5">
                             Se deben formar equipos de 3-4 personas. Al menos dos tercios de los miembros del equipo
                             deberan pertenecer a la misma universidad.
                         </p>
@@ -216,7 +223,7 @@
         </article>
     </section>
     <section id="ubicacion" class="container text-center my-5 p-3">
-        <h2 class="my-5 dividered dividered-center dividered-danger title">Ubicación</h2>
+        <h2 class="my-5 dividered dividered-center dividered-danger section-title">Ubicación</h2>
         <article class="text-center row container">
 
             <div class="container col-md-6 col-sm-12 m-md-0 ms-2" style="height:20rem">
@@ -230,7 +237,7 @@
                 </section>
                 <section class="mt-4">
                     <b class="h4"><i class="fa-solid fa-location-dot me-3"></i> Campus URJC, Móstoles<br><span
-                            class="text-small ms-5">&nbsp;C.
+                            class="text-small ms-5" style="font-family: 'Open Sans';">&nbsp;C.
                             Tulipán, s/n, 28933
                             Móstoles, Madrid</span></b>
                 </section>
@@ -238,8 +245,9 @@
         </article>
     </section>
     <div class="patrocinadores">
+        <br><br>
         <section id="patrocinadores" class="text-center container patrocinadores py-5">
-            <h2 class="py-5 dividered dividered-center dividered-danger title">Patrocinadores</h2>
+            <h2 class="py-5 dividered dividered-center dividered-danger section-title">Patrocinadores</h2>
 
             <h3 class="my-5 title">PATROCINADORES PLATINO</h3>
             <article class="text-center row container">
