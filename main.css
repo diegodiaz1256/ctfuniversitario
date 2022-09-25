@@ -17,6 +17,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.body{
+    overflow: hidden;
+
+}
+
 .title {
     font-family: titillium-Web, sans-serif !important;
     text-transform: uppercase;
@@ -27,7 +32,7 @@
     
     font-family: titillium-Web;
     font-weight: bold;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     
 }
 
@@ -72,8 +77,16 @@
     background-color: #e2e2e2;
 }
 
+.premios{
+    background-color: #2f2454 ;
+}
+
+.requisitos{
+    background-color: #eee9f9;
+}
+
 .text-small {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .dotted {
@@ -99,15 +112,15 @@
     font-family: sans-serif !important;
     text-transform: uppercase;
     font-weight: 600 !important;
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
 }
 
 .navbar-title-main {
     font-family: sans-serif !important;
     text-transform: uppercase;
     font-weight: 700 !important;
-    font-size: 1.5rem !important;
-    margin-right: 30px !important;
+    font-size: 1.3rem !important;
+    margin-right: 2% !important;
 }
 
 
@@ -219,3 +232,184 @@ button:hover {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
+/* PRIZES SECTION */
+
+.prizes-container-fluid,
+.prizes-container {
+	color: white;
+    font-family: "Open Sans";
+}
+
+.card-container {
+    padding: 100px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    
+}
+
+
+.profile-card-4 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-4 img {
+    transition: all 0.25s linear;
+}
+
+.profile-card-4 .profile-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.profile-card-4 .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: #FFF;
+    font-size: 17px;
+}
+
+.profile-card-4 .profile-name p {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.profile-card-4 .profile-description {
+    color: #777;
+    padding: 10px;
+	 font-weight: 600;
+    font-size: 18px;
+}
+
+.profile-card-4 .profile-overview {
+    padding: 6px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+.profile-card-4 .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+.profile-card-4 .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
+}
+
+/* FAQ SECTION */
+.our-faq-wrapper {
+    float: left;
+    width: 100%;
+    padding: 89px 0 60px;
+    background:#f5f5f5;
+  }
+  
+  .our-faq-wrapper {
+    padding: 90px 0 60px;
+    background:#fff;  
+  }
+  .faq-accordion .faq-card {
+    border: none;
+    margin-bottom: 30px;
+  }
+
+  .our-faq-wrapper .btn-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    background: #242c42;
+    color: #fff;
+    border-radius: 0;
+    padding: 7px 15px 12px;
+    font-size: 16px;
+    overflow: hidden;
+    border: none;
+    font-weight:600;  
+    text-decoration: none;
+
+  }
+ 
+  .our-faq-wrapper .btn-link:after {
+    text-decoration: none;
+    position: absolute;
+    content: '\f068';
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: fontawesome;
+  }
+  .our-faq-wrapper .btn-link.collapsed:after {
+    text-decoration: none;
+    content: '\f067';
+  }
+  .our-faq-wrapper .btn-link:before {
+    text-decoration: none;
+    position: absolute;
+    content: '';
+    background: #855fdd;
+    -webkit-transform: skew(-35deg);
+    transform: skew(-35deg);
+    height: 100%;
+    width: 50%;
+    left: 90%;
+    top: 0;
+  }
+  .faq-card-header {
+    padding: 0;
+    background: transparent;
+    border-bottom: none;
+  }
+  .faq-card-body {
+    position: relative;
+  }
+  .faq-card-body:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #242c42;
+  }
+  .faq-card-body:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    background: #855fdd;
+    z-index: 1;
+  }
