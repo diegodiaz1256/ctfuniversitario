@@ -1,6 +1,6 @@
 .profile-card {
     transition: 0.5s;
-    min-width: 90%;
+    min-height: 80%;
 }
 
 .profile-card:hover {
@@ -50,4 +50,8 @@
 .mobile {
     margin: 0 auto;
     overflow: auto
+}
+
+body {
+    background-color: #120c25 !important;
 }
