@@ -72,7 +72,7 @@
         r.style.setProperty('--bs-danger', '#986efd');
         r.style.setProperty('--bs-danger-rgb', '133, 95, 221');
         //r.style.setProperty('--bs-danger-rgb', '27, 133, 169');
-        if ((new URL(window.location.href)).host === "librelabucm.org") {
+        if ((new URL(window.location.href)).host.includes("librelabucm.org")) {
             r.style.setProperty('--bs-danger', '#383ab5');
             r.style.setProperty('--bs-danger-rgb', '56, 58, 181');
             r.style.setProperty('--bullet-colors', '#2325b8');
@@ -387,7 +387,7 @@
             </article>
         </section>
     </div>
-    <!-- TODO: fix hover/focus 
+    <!-- TODO: fix hover/focus -->
     <section class="faq">
         <div class="our-faq-wrapper">
             <div class="container">
@@ -472,7 +472,6 @@
             </div>
           </div>
     </section>
-    -->
     <script src='https://code.jquery.com/jquery-2.1.0.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
     

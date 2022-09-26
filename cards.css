@@ -1,10 +1,13 @@
 .profile-card {
     transition: 0.5s;
+    min-width: 90%;
 }
+
 .profile-card:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
+
 .profile-photo {
     width: 100px;
     height: 100px;
@@ -12,17 +15,20 @@
     border-radius: 100%;
     overflow: hidden;
 }
+
 .social-links ul {
     padding: 0px;
     margin: 0px;
 }
+
 .social-links ul li {
     list-style: none;
     display: inline-block;
     margin: 2px 0px;
-    font-size: 20px;          
-  
+    font-size: 20px;
+
 }
+
 .social-links ul li a {
     color: #422f6e;
     padding: 2px 6px;
@@ -30,6 +36,7 @@
     transition: 0.5s;
 
 }
+
 .social-links ul li:hover a {
     background-color: #422f6e;
     color: #fff;
@@ -37,6 +44,10 @@
 }
 
 .text-secondary {
-    margin: 8px !important; 
+    margin: 8px !important;
 }
 
+.mobile {
+    margin: 0 auto;
+    overflow: auto
+}
