@@ -437,3 +437,15 @@ button:hover {
     background-color: #242c42 !important;
     color: white !important;
 }
+
+.minitext{
+    font-size: 0.8rem;
+    font-family: titilium-web,arial !important;
+    font-weight: lighter !important;
+    color: white;
+}
+
+.asterisco{
+    font-size: 2rem;
+    font-family: arial !important;
+}
