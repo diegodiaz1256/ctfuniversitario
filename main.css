@@ -200,6 +200,22 @@ button:hover {
     border-color: #906edd !important;
 }
 
+.inscripcion-link{
+    background-color: transparent !important;
+    border-color: transparent !important;
+    text-decoration: none;
+}
+.inscripcion-link:hover{
+    background-color: transparent !important;
+    border-color: transparent !important;
+    text-decoration: none;
+}
+.inscripcion-link:focus{
+    background-color: transparent !important;
+    border-color: transparent !important;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 1200px) {
     .banner h1 {
         font-size: 8.5rem;
