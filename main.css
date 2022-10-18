@@ -507,4 +507,10 @@ button:hover {
     letter-spacing: 0;
     vertical-align: top;
 }
+.horario div span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    vertical-align: top;
+}
 
