@@ -496,3 +496,8 @@ button:hover {
 
 }
 
+.linknormas {
+    text-decoration: none !important;
+    color:#855fdd !important;
+}
+
